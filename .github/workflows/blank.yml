@@ -7,7 +7,7 @@ on:
   workflow_dispatch:
 
 env:
-      URI_DEV: "new dev"
+      URI_DEV: ${{ URI_DEV }}
 
 jobs:
 

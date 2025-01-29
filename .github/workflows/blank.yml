@@ -8,7 +8,8 @@ on:
 
 env:
       URI_DEV: ${{vars.URI_DEV}}
-      HIII: ${secrets.NEW}
+      HIII: ${{secrets..NEW}}
+      MyNEW: "HI HELLO NEW"
 
 jobs:
 
@@ -25,3 +26,6 @@ jobs:
           echo Hello, world!
           echo "$URI_DEV"
           echo "$HIII"
+          echo "$MyNEW"
+          MyNEW= "22222222"
+          echo "$MyNEW"

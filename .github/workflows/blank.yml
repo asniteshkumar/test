@@ -31,4 +31,6 @@ jobs:
       - name: Set env
         run: |
           URI_DEV="NEW VALUE"
+          HIII=${{vars.URI_DEV}}
           echo "$URI_DEV"
+          echo "$HIII"

@@ -24,6 +24,6 @@ jobs:
       - name: Run a one-line script
         run: |
           echo Hello, world!
-          echo "$URI_DEV"
+          echo "s3://$URI_DEV/"
           echo "$HIII"
           echo "$MyNEW"

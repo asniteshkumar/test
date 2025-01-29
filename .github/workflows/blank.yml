@@ -8,6 +8,7 @@ on:
 
 env:
       URI_DEV: ${{vars.URI_DEV}}
+      HIII: ${secrets.NEW}
 
 jobs:
 
@@ -23,3 +24,4 @@ jobs:
         run: |
           echo Hello, world!
           echo "$URI_DEV"
+          echo "$HIII"

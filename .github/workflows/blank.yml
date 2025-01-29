@@ -27,3 +27,8 @@ jobs:
           echo "s3://$URI_DEV/"
           echo "$HIII"
           echo "$MyNEW"
+
+      - name: Set env
+        run: |
+          URI_DEV="NEW VALUE"
+          echo "$URI_DEV"

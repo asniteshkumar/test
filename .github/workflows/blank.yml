@@ -8,7 +8,7 @@ on:
 
 env:
       URI_DEV: ${{vars.URI_DEV}}
-      HIII: ${{secrets..NEW}}
+      HIII: ${{secrets.NEW}}
       MyNEW: "HI HELLO NEW"
 
 jobs:

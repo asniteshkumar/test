@@ -7,7 +7,7 @@ on:
   workflow_dispatch:
 
 env:
-      URI_DEV: ${{ URI_DEV }}
+      URI_DEV: ${{vars.URI_DEV}}
 
 jobs:
 

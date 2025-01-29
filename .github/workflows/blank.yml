@@ -6,7 +6,8 @@ on:
   
   workflow_dispatch:
 
-
+env:
+      URI_DEV: ${{ env.URI_DEV }} 
 
 jobs:
 
@@ -15,10 +16,10 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-  
+
       - uses: actions/checkout@v4
 
       - name: Run a one-line script
         run: |
           echo Hello, world!
-          echo ${{ env.URI_DEV }}
+          echo "$URI_DEV"

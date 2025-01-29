@@ -27,5 +27,3 @@ jobs:
           echo "$URI_DEV"
           echo "$HIII"
           echo "$MyNEW"
-          MyNEW= "22222222"
-          echo "$MyNEW"

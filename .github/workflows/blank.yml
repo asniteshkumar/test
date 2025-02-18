@@ -33,7 +33,7 @@ jobs:
       - name: test var
         run: |
           echo "AWS_PROD=${{ vars.URI_PROD }}" >> $GITHUB_ENV
-          echo "${{ env.AWS_PROD}}"
+          echo ${{ env.AWS_PROD}}
       - name: Set env
         run: |
           URI_DEV="NEW VALUE"

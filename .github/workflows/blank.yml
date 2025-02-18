@@ -40,7 +40,7 @@ jobs:
         run: | 
           echo "hello"
           echo "AWS_REGION=${{ vars.URI_PROD }}" >> $GITHUB_ENV
-          echo "${{ env.AWS_REGION }}"
+          echo "$AWS_REGION"
       
       - name: Set env
         run: |

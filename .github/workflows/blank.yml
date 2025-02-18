@@ -24,12 +24,16 @@ jobs:
       - name: Run a one-line script
         run: |
           echo Hello, world!
-          echo "AWS_CODE=$ {{ vars.URI_DEV }}" >> @GITHUB_ENV
+          echo "AWS_CODE=$ {{ vars.URI_DEV }}" >> $GITHUB_ENV
           echo "${{ env.AWS_CODE }}"
           echo "s3://$URI_DEV/"
           echo "$HIII"
           echo "$MyNEW"
 
+      - name: test var
+        run: |
+          echo "AWS_PROD=${{ vars.URI_PROD }}" >> $GITHUB_ENV
+          echo "${{ env.AWS_PROD}}"
       - name: Set env
         run: |
           URI_DEV="NEW VALUE"

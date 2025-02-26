@@ -30,10 +30,17 @@ jobs:
           echo "$HIII"
           echo "$MyNEW"
 
-      - name: test var
+      - name: test var      
         run: |
           echo "AWS_PROD=${{ vars.URI_PROD }}" >> $GITHUB_ENV
           echo "$AWS_PROD"
+
+      - name: test var
+        shell: bash
+        run: |
+         Commit = $(git rev-parse --short HEAD)
+         image = ${Commit}
+         echo image
 
 
       - name: test more

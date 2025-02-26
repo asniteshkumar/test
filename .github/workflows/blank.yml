@@ -38,8 +38,8 @@ jobs:
       - name: test var
         shell: bash
         run: |
-         Commit = $(git rev-parse --short HEAD)
-         image = ${Commit}
+         Cohmmit = $(git rev-parse --short HEAD)
+         image = ${Cohmmit}
          echo image
 
 

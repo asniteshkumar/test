@@ -36,11 +36,11 @@ jobs:
           echo "$AWS_PROD"
 
       - name: Set Commit SHA and Image Tag
-        shell: bash  # Ensure the script runs in bash
+      
         run: |
          COMMIT_SHA=$(git rev-parse --short HEAD)
          IMAGE_TAG=${COMMIT_SHA}
-         echo "Final Image Tag: $IMAGE_TAG"
+     
 
 
       - name: test more

@@ -36,7 +36,6 @@ jobs:
           echo "$AWS_PROD"
 
       - name: test var
-        shell: bash
         run: |
          Cohmmit = $(git rev-parse --short HEAD)
          image = ${Cohmmit}
